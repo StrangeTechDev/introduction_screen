@@ -14,7 +14,10 @@ dependencies:
     sdk: flutter
 
   collection: ^1.18.0
-  dots_indicator: ^4.0.1
+  # Fork carrying the standalone-UI migration; the pub release renders an
+  # SDK-Material InkWell that throws "No Material widget found." under material_ui.
+  dots_indicator:
+    git: https://github.com/StrangeTechDev/dots_indicator.git
   flutter_keyboard_visibility_temp_fork: ^0.1.5
 
 dev_dependencies:
